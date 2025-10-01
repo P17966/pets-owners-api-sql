@@ -28,7 +28,8 @@ public class PetsDB
                 CREATE TABLE IF NOT EXISTS Pets (
                     id INTEGER PRIMARY KEY,
                     name TEXT,
-                    ownerId INTERGER FOREIGN KEY REFERENCES Owners(id));";
+                    ownerId INTEGER,
+                    FOREIGN KEY (ownerId) REFERENCES Owners(id));";
             commandForCreatePetsTable.ExecuteNonQuery();
         }
     }
