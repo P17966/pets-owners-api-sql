@@ -52,7 +52,7 @@ Commands needed for the console to run this are following:
 
 *This will run the docker container in 5000 port*
 *To specify more first 5000 is port of the client and next 5000 is port of the container*
-`docker run -p  5000:5000 mimimalapi`
+`docker run -d -p  5000:5000 mimimalapi`
 
 ### IMPORTANT CHANGE TO CODE ###
 
