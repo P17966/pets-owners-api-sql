@@ -3,6 +3,7 @@ using PetsOwnersApiSql;
 // Käyttäen Microsoft.AspNetCore.Mvc oli ainoa keino miten sain toimimaan.
 
 var builder = WebApplication.CreateBuilder(args);
+builder.WebHost.UseUrls("http://0.0.0.0:5000");
 var app = builder.Build();
 
 var PetsDB = new PetsDB();
